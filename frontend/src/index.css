@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: "Poppins", serif;
+}
+
+a.active{
+   color: #ffc857;
+   font-weight: 800;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #eaf7f8; /* Very pale, soft cyan */
+    border-radius: 10px; /* Smooth, rounded edges */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #a4d8dd; /* Gentle pastel teal */
+    border-radius: 10px; /* Rounded edges for a modern look */
+    border: 2px solid #eaf7f8; /* Creates a soft gap effect */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8fc9cf; /* Slightly deeper pastel teal for hover */
+  }
+
+  .drop-shadow-xl{
+    text-shadow: black;
+  }
+
+  input::placeholder,textarea::placeholder,input,textarea{
+    color: #fff;
+  }
+
+
+  @keyframes autoRun {
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(calc(-250px * 5.5));
+    }
+  }
+  @keyframes playRev {
+    0%{
+      transform: translateX(calc(-250px * 5.5));
+    }
+    100%{
+      transform: translateX(0);
+    }
+  }
+
+  .slider{
+    mask-image: linear-gradient(to right, transparent, #000, transparent);
+
+  }
+  .slide{
+    perspective: 200px;
+  }
+  .slide-track{
+    animation: autoRun 40s linear infinite;
+  }
+  .slide-track[reverse="true"]{
+    animation: playRev 40s linear infinite;
+  }
+  .slide-track:hover{
+    animation-play-state: paused;
+  }
+  .slider:hover img{
+    filter: grayscale(1);
+  }
+  .slide img:hover{
+    transform:  translateZ(20px);
+    filter: grayscale(0);
+  }
+ 
+
+  @layer base{
+    
+  
+.infinte-scroller{
+  @apply flex justify-around items-center gap-4 sm:gap-6 w-[80%] sm:w-2/3 overflow-hidden flex-grow-0 mt-2
+}
+
+
+}
