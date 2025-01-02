@@ -32,7 +32,7 @@ const About = () => {
       </div>
       </div>
       {/* Section 3 */}
-      <div className="w-full min-h-screen bg-background flex flex-col md:flex-row justify-between items-center px-4 py-8 md:px-8 gap-8 md:gap-0">
+      <div className="w-full min-h-screen bg-background flex flex-col md:flex-row justify-between items-center px-12 py-12 md:px-8 md:pl-16 gap-8 md:gap-0">
         <div className="w-full md:w-[50%] min-h-full flex flex-col gap-4 justify-center items-center md:items-start">
           <h2 className='text-center md:text-start text-3xl sm:text-4xl md:text-5xl text-white font-bold tracking-wider [text-shadow:_0_2px_8px_#000000]'>
           From Adversity To <span className='text-tritary '>Accomplished Entrepreneur</span>
@@ -45,7 +45,35 @@ const About = () => {
         </div>
       </div>
       {/* Section 4 */}
-      
+      <div className="w-full min-h-screen flex flex-col md:flex-row justify-center md:justify-end items-center px-12 py-16 md:px-8 bg-[url('/src/assets/aboutpage7.png')] bg-fixed bg-left mt-20 md:bg-top md:py-28">
+      <div className="w-full md:w-[50%] min-h-full flex flex-col gap-5">
+      <h2 className='text-center md:text-start text-3xl sm:text-4xl md:text-5xl text-white font-bold tracking-tight [text-shadow:_0_2px_8px_#000000]'>
+          Mentor And<span className='text-tritary '> Leader</span>
+          </h2>
+          <p className='text-lg md:text-xl text-white text-center md:text-start'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem blanditiis iusto temporibus vel, facere nam quia ducimus in, voluptatibus reiciendis fuga distinctio, deleniti deserunt magnam voluptatem officiis quam numquam quibusdam.</p>
+          <p className='text-lg md:text-xl text-white text-center md:text-start'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem blanditiis iusto temporibus vel, facere nam quia ducimus in, voluptatibus reiciendis fuga distinctio, deleniti deserunt magnam voluptatem officiis quam numquam quibusdam.</p>
+          <p className='text-lg md:text-xl text-white text-center md:text-start'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem blanditiis iusto temporibus vel, facere nam quia ducimus in, voluptatibus reiciendis fuga distinctio, deleniti deserunt magnam voluptatem officiis quam numquam quibusdam.</p>
+          <p className='text-lg md:text-xl text-white text-center md:text-start'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem blanditiis iusto temporibus vel, facere nam quia ducimus in, voluptatibus reiciendis fuga distinctio, deleniti deserunt magnam voluptatem officiis quam numquam quibusdam.</p>
+      </div>
+      </div>
+      {/* Section 5 */}
+      <div className="w-full min-h-screen flex flex-col gap-6 items-center justify-center px-12 md:px-16 py-16">
+      <h2 className='text-center md:text-start text-3xl sm:text-4xl md:text-5xl text-white font-bold tracking-tight [text-shadow:_0_2px_8px_#000000]'>
+          My <span className='text-tritary '>Mentors</span>
+          </h2>
+          <div className="w-full min-h-full flex flex-col md:flex-row gap-6 items-center justify-normal md:justify-center">
+            <div className="min-h-[350px] w-full md:w-[48%] flex flex-col items-center md:items-start justify-center gap-4">
+              <img src="/src/assets/testimonial1.jpg" alt="img" className='w-full h-[400px] object-cover rounded-lg' />
+              <h4 className='text-xl md:text-2xl text-center md:text-start text-secondary'>John C Maxwell</h4>
+              <p className='text-lg md:text-xl text-center md:text-start'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, inventore. Neque voluptatem veniam eum rerum hic, nobis voluptates doloribus. Eligendi corrupti tempore veniam quisquam aliquid repellat, blanditiis ipsam quod explicabo eos minus quas laborum, consequuntur quae culpa illo illum ratione voluptates mollitia perferendis nihil recusandae facere excepturi saepe! Autem vitae modi, temporibus, eos ad ullam libero culpa quam quaerat voluptates quasi qui adipisci laborum nihil doloribus iste laudantium deserunt repudiandae alias eveniet, voluptatibus optio ipsam? Soluta provident fuga, itaque excepturi consectetur modi ipsa mollitia, possimus dolorem at ex eum natus corrupti animi cupiditate accusamus blanditiis suscipit voluptatem, dolorum dolores sint.</p>
+            </div>
+            <div className="min-h-[350px] w-full md:w-[48%] flex flex-col items-center md:items-start justify-center gap-4">
+              <img src="/src/assets/testimonial1.jpg" alt="img" className='w-full h-[400px] object-cover rounded-lg' />
+              <h4 className='text-xl md:text-2xl text-center md:text-start text-secondary'>John C Maxwell</h4>
+              <p className='text-lg md:text-xl text-center md:text-start'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, inventore. Neque voluptatem veniam eum rerum hic, nobis voluptates doloribus. Eligendi corrupti tempore veniam quisquam aliquid repellat, blanditiis ipsam quod explicabo eos minus quas laborum, consequuntur quae culpa illo illum ratione voluptates mollitia perferendis nihil recusandae facere excepturi saepe! Autem vitae modi, temporibus, eos ad ullam libero culpa quam quaerat voluptates quasi qui adipisci laborum nihil doloribus iste laudantium deserunt repudiandae alias eveniet, voluptatibus optio ipsam? Soluta provident fuga, itaque excepturi consectetur modi ipsa mollitia, possimus dolorem at ex eum natus corrupti animi cupiditate accusamus blanditiis suscipit voluptatem, dolorum dolores sint.</p>
+            </div>
+          </div>
+      </div>
     </div>
   )
 }
