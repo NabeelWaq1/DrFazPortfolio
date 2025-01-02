@@ -84,7 +84,7 @@ const Testimonials = () => {
 
 {/* Section 3 */}
       <div className="w-screen min-h-screen grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 py-8 gap-4">
-        <video controls className='w-[80%] mx-auto border-2 shadow-4xl shadow-thrice border-black rounded-xl h-[300px]' src="/src/assets/videos/1.mp4"></video>
+        <video poster='/src/assets/1.png' controls className='w-[80%] mx-auto border-2 shadow-4xl shadow-thrice border-black rounded-xl h-[300px]' src="/src/assets/videos/1.mp4"></video>
         <video controls className='w-[80%] mx-auto border-2 shadow-4xl shadow-thrice border-black rounded-xl h-[300px]' src="/src/assets/videos/2.mp4"></video>
         <video controls className='w-[80%] mx-auto border-2 shadow-4xl shadow-thrice border-black rounded-xl h-[300px]' src="/src/assets/videos/3.mp4"></video>
         <video controls className='w-[80%] mx-auto border-2 shadow-4xl shadow-thrice border-black rounded-xl h-[300px]' src="/src/assets/videos/4.mp4"></video>
