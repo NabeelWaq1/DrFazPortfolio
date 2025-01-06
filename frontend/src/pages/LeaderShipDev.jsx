@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Coaching = () => {
+const LeaderShipDev = () => {
   return (
     <div className='w-full min-h-screen relativ mt-[108px]'>
       {/* Section 1 */}
@@ -71,4 +71,4 @@ const Coaching = () => {
   )
 }
 
-export default Coaching
+export default LeaderShipDev

@@ -6,14 +6,16 @@ import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
 import Quote from './pages/Quote.jsx';
 import Testimonials from './pages/Testimonials.jsx';
-import SalesB2C from './pages/SalesB2C.jsx';
 import SalesTraining from './pages/SalesTraining.jsx';
-import GoalSetting from './pages/GoalSetting.jsx';
 import Enterpreneurship from './pages/Enterpreneurship.jsx';
 import Coaching from './pages/Coaching.jsx';
 import Business from './pages/Business.jsx';
 import Footer from './components/Footer.jsx';
 import KeyNoteSpeaking from './pages/KeyNoteSpeaking.jsx';
+import CorporateTraining from './pages/CorporateTraining.jsx';
+import InspirationalTalks from './pages/InspirationalTalks.jsx';
+import LeaderShipDev from './pages/LeaderShipDev.jsx';
+import DreamBuilding from './pages/DreamBuilding.jsx';
 
 const App = () => {
   return (
@@ -25,13 +27,15 @@ const App = () => {
      <Route path='/contact' element={<Contact/>} />
      <Route path='/quote' element={<Quote/>} />
      <Route path='/testimonials' element={<Testimonials/>} />
-     <Route path='/sales' element={<SalesB2C/>} />
+     <Route path='/leadership' element={<LeaderShipDev/>} />
+     <Route path='/dreamBuilding' element={<DreamBuilding/>} />
      <Route path='/salesTraining' element={<SalesTraining/>} />
-     <Route path='/goalSetting' element={<GoalSetting/>} />
      <Route path='/enterpreneurship' element={<Enterpreneurship/>} />
      <Route path='/coaching' element={<Coaching/>} />
      <Route path='/business' element={<Business/>} />
      <Route path='/keynotespeaking' element={<KeyNoteSpeaking/>} />
+     <Route path='/corporatetraining' element={<CorporateTraining/>} />
+     <Route path='/inspirational' element={<InspirationalTalks/>} />
      </Routes>
      <Footer/>
     </div>

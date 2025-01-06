@@ -158,31 +158,31 @@ const Home = () => {
       </div>
       </div>
       {/* Testimonials */}
-      <div className="flex flex-col items-center justify-center gap-8 w-full min-h-screen py-4 md:py-20">
+      <div className="flex flex-col items-center justify-center gap-8 w-full min-h-screen py-16 md:py-20">
         <div className="text-center w-full sm:w-[60%] md:whitespace-nowrap flex justify-center items-center px-4 sm:px-0">
         <h1 className='text-2xl md:text-4xl lg:text-5xl font-extrabold '>WHY DO SALES EXECUTIVES WORLDWIDE <br />
         <span className='text-tritary'>LOVE WORKING WITH PAUL?</span></h1>
         </div>
-        <div className="flex flex-col items-center justify-center gap-8 w-full min-h-full px-4 md-px-0">
-        <div className="flex w-full md:w-[80%] justify-between items-center gap-8">
+        <div className="flex flex-col items-center justify-center gap-8 w-full min-h-full px-6 md-px-0">
+        <div className="flex w-full md:w-[80%] justify-between flex-col md:flex-row items-center gap-8">
           <img src="/src/assets/testimonial1.jpg" className='w-48 h-48 rounded-full object-cover' alt="" />
           <div className="flex flex-col justify-center items-center md:items-start gap-2">
             <h2 className='text-xl sm:text-2xl md:text-3xl font-extrabold font-[Raleway]'>Albert</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi alias libero recusandae maxime soluta tempora excepturi. Architecto sunt cupiditate saepe animi, ullam cumque doloremque illum.</p>
+            <p className='text-center md:text-start'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi alias libero recusandae maxime soluta tempora excepturi. Architecto sunt cupiditate saepe animi, ullam cumque doloremque illum.</p>
           </div>
         </div>
-        <div className="flex w-full md:w-[80%] justify-between flex-row-reverse items-center gap-8">
+        <div className="flex w-full md:w-[80%] justify-between flex-col md:flex-row items-center gap-8">
           <img src="/src/assets/testimonial1.jpg" className='w-48 h-48 rounded-full object-cover' alt="" />
           <div className="flex flex-col justify-center items-center md:items-start gap-2">
             <h2 className='text-xl sm:text-2xl md:text-3xl font-extrabold font-[Raleway]'>Albert</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi alias libero recusandae maxime soluta tempora excepturi. Architecto sunt cupiditate saepe animi, ullam cumque doloremque illum.</p>
+            <p className='text-center md:text-start'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi alias libero recusandae maxime soluta tempora excepturi. Architecto sunt cupiditate saepe animi, ullam cumque doloremque illum.</p>
           </div>
         </div>
-        <div className="flex w-full md:w-[80%] justify-between items-center gap-8">
+        <div className="flex w-full md:w-[80%] justify-between flex-col md:flex-row items-center gap-8">
           <img src="/src/assets/testimonial1.jpg" className='w-48 h-48 rounded-full object-cover' alt="" />
           <div className="flex flex-col justify-center items-center md:items-start gap-2">
             <h2 className='text-xl sm:text-2xl md:text-3xl font-extrabold font-[Raleway]'>Albert</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi alias libero recusandae maxime soluta tempora excepturi. Architecto sunt cupiditate saepe animi, ullam cumque doloremque illum.</p>
+            <p className='text-center md:text-start'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi alias libero recusandae maxime soluta tempora excepturi. Architecto sunt cupiditate saepe animi, ullam cumque doloremque illum.</p>
           </div>
         </div>
           </div>

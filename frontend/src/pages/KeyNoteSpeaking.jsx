@@ -32,7 +32,7 @@ const KeyNoteSpeaking = () => {
     </div>
 
     {/* Section 3 */}
-    <div className="w-full min-h-screen flex flex-col gap-4 py-16 justify-center items-center md:justify-start relative">
+    <div className="w-full min-h-screen flex flex-col gap-4 py-16 justify-center items-center bg-white pb-0 md:justify-start relative">
     <h2 className='text-center md:text-start text-3xl sm:text-4xl md:text-5xl text-primary font-bold tracking-wider'>
     SPEAKING TOPICS
           </h2>
