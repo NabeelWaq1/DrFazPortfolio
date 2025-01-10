@@ -6,10 +6,10 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-center gap-8 border-t-4 border-b-4 border-primary items-center w-full min-h-[100px] px-4 py-6">
       <h2 className='text-2xl md:text-3xl lg:text-4xl font-extrabold text-primary [text-shadow:_2px_4px_4px_#fff] text-center md:text-start'>CONNECT WITH Dr. FAZ</h2>
       <div className="flex flex-row flex-wrap gap-2 items-center justify-center w-full md:w-[200px]">
-      <i class="ri-instagram-fill w-14 h-14 md:w-10 md:h-10 hover:bg-secondary cursor-pointer transition-all ease-in duration-200 rounded-full text-background bg-primary flex justify-center items-center"></i>
-      <i class="ri-facebook-circle-fill w-14 h-14 md:w-10 hover:bg-secondary cursor-pointer transition-all ease-in duration-200 md:h-10 rounded-full text-background bg-primary flex justify-center items-center"></i>
-      <i class="ri-youtube-fill w-14 h-14 md:w-10 md:h-10 hover:bg-secondary cursor-pointer transition-all ease-in duration-200 rounded-full text-background bg-primary flex justify-center items-center"></i>
-      <i class="ri-linkedin-box-fill w-14 h-14 md:w-10 hover:bg-secondary cursor-pointer transition-all ease-in duration-200 md:h-10 rounded-full text-background bg-primary flex justify-center items-center"></i>
+      <i className="ri-instagram-fill w-14 h-14 md:w-10 md:h-10 hover:bg-secondary cursor-pointer transition-all ease-in duration-200 rounded-full text-background bg-primary flex justify-center items-center"></i>
+      <i className="ri-facebook-circle-fill w-14 h-14 md:w-10 hover:bg-secondary cursor-pointer transition-all ease-in duration-200 md:h-10 rounded-full text-background bg-primary flex justify-center items-center"></i>
+      <i className="ri-youtube-fill w-14 h-14 md:w-10 md:h-10 hover:bg-secondary cursor-pointer transition-all ease-in duration-200 rounded-full text-background bg-primary flex justify-center items-center"></i>
+      <i className="ri-linkedin-box-fill w-14 h-14 md:w-10 hover:bg-secondary cursor-pointer transition-all ease-in duration-200 md:h-10 rounded-full text-background bg-primary flex justify-center items-center"></i>
       </div>
       </div>
       <div className="flex flex-col justify-center px-8 md:px-20 items-center w-full min-h-[300px] bg-secondary py-4">

@@ -18,6 +18,7 @@ import LeaderShipDev from './pages/LeaderShipDev.jsx';
 import DreamBuilding from './pages/DreamBuilding.jsx';
 
 const App = () => {
+  
   return (
     <div className='w-full min-h-screen bg-background text-darkBlue overflow-x-hidden'>
      <NavBar/>
