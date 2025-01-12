@@ -43,7 +43,7 @@ a.active{
   }
 
   input::placeholder,textarea::placeholder,input,textarea{
-    color: #fff;
+    color: #1d1c1c7d;
   }
 
 
@@ -70,6 +70,8 @@ a.active{
   }
   .slide{
     perspective: 200px;
+    cursor: pointer;
+    border-radius: 20px;
   }
   .slide-track{
     animation: autoRun 40s linear infinite;
@@ -80,12 +82,8 @@ a.active{
   .slide-track:hover{
     animation-play-state: paused;
   }
-  .slider:hover img{
-    filter: grayscale(1);
-  }
   .slide img:hover{
     transform:  translateZ(20px);
-    filter: grayscale(0);
   }
  
 

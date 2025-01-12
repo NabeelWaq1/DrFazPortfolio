@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-center px-8 md:px-20 items-center w-full min-h-[200px] bg-secondary py-6">
         <div className="w-full md:w-[48%] md:flex-row md:justify-start md:items-center min-h-full flex items-center justify-center gap-4 flex-col">
          <div className="w-36 h-36 rounded-full border-2 border-primary"> 
-          <img src="/src/assets/2.png" className='w-full h-full object-cover object-center rounded-full' alt="" />
+          <img src="/src/assets/footer.jpg" className='w-full h-full object-cover object-center rounded-full' alt="" />
          </div>
          <h1 className='text-3xl font-ligh text-background font-[arms] my-4 mb-14 md:mb-6 mr-2'>Dr. <span className='text-tritary font-[arms]'>Faz</span></h1>
         </div>

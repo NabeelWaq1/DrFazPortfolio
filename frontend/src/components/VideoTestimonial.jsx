@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 
-const VideoTestimonial = ({videoRef,videoSrc}) => {
+const VideoTestimonial = ({videoRef,videoSrc,thumb}) => {
 
      const playPauseBtn = useRef(null);
         const progressBar = useRef(null);
@@ -119,7 +119,8 @@ const VideoTestimonial = ({videoRef,videoSrc}) => {
        
 
   return (
-    <div onMouseMove={() => showControls()} ref={containerRef} className="container w-full md:w-[80%]  relative rounded-lg bg-black mx-auto">
+    <div className="w-full md:w-[80%] relative flex flex-col gap-2 items-center md:items-start justify-center mx-auto mb-10">
+    <div onMouseMove={() => showControls()} ref={containerRef} className="container w-full md:w-full  relative rounded-lg bg-black mx-auto">
     <div onClick={playPause} className="absolute flex justify-center items-center w-20 z-10 cursor-pointer opacity-0 h-20 play rounded-full left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] bg-tritary text-white">
     <i ref={playPauseRef} className="ri-play-fill text-3xl text-center cursor-pointer"></i>
     </div>
@@ -172,7 +173,10 @@ const VideoTestimonial = ({videoRef,videoSrc}) => {
         </li>
       </ul>
     </div>
-    <video onLoadedData={(e) => updateDuration(e)} onTimeUpdate={(e) => timeUpdate(e)} ref={videoRef} poster='/src/assets/4.png' className='w-full h-full px-2 rounded-lg' src={videoSrc}></video>
+    <video onLoadedData={(e) => updateDuration(e)} onTimeUpdate={(e) => timeUpdate(e)} ref={videoRef} poster={thumb} className='w-full h-full px-2 rounded-lg' src={videoSrc}></video>
+  </div>
+  <h4 className='text-xl md:text-2xl text-center md:text-start text-primary font-extrabold'>John C Maxwell</h4>
+  <h4 className='text-lg md:text-xl text-center md:text-start text-black [text-shadow:_0px_1px_2px_#2f6690] font-normal'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, repellat.</h4>
   </div>
   )
 }
