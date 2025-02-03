@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className='flex flex-col items-center justify-center w-full min-h-[50vh] md:min-h-[45vh] overflow-hidden'>
-      <div className="flex flex-col md:flex-row justify-center gap-8 border-t-4 border-b-4 border-primary items-center w-full min-h-[100px] px-4 py-6">
+      <div className="flex bg-white bg-opacity-70 flex-col md:flex-row justify-center gap-8 border-t-4 border-b-4 border-primary items-center w-full min-h-[100px] px-4 py-6">
       <h2 className='text-2xl md:text-3xl lg:text-4xl font-extrabold text-primary [text-shadow:_2px_4px_4px_#fff] text-center md:text-start'>CONNECT WITH Dr. FAZ</h2>
       <div className="flex flex-row flex-wrap gap-2 items-center justify-center w-full md:w-[200px]">
       <i className="ri-instagram-fill w-14 h-14 md:w-10 md:h-10 hover:bg-secondary cursor-pointer transition-all ease-in duration-200 rounded-full text-background bg-primary flex justify-center items-center"></i>

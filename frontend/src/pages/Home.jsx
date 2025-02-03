@@ -4,6 +4,8 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { Timeline } from 'gsap/gsap-core.js'
 import Marquee from "react-fast-marquee";
+// import "https://assets.calendly.com/assets/external/widget.css";
+// import "https://assets.calendly.com/assets/external/widget.js";
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -219,7 +221,7 @@ containerRef.current.classList.remove("show-controls")
 
   return (
     <div onClick={(e) => checkClick(e)} className='w-full min-h-screen overflow-x-hidden'>
-      <GetQuoteButton />
+      {/* <GetQuoteButton /> */}
       {/* Carousel */}
       <div className='w-full h-screen m-auto relative group mt-[108px]'>
         <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className={`w-full h-full bg-cover ${(currentIndex%2) === 0 ? "bg-right":"bg-left"} md:bg-center duration-500 relative px-10`}>
@@ -367,8 +369,8 @@ containerRef.current.classList.remove("show-controls")
         </div>
       </div>
       {/* About */}
-      <div className="w-full h-screen sm:h-[115vh] lg:h-[100vh] xl:h-[100vh] overflow-hidden bg-fixed bg-[url('/src/assets/4.png')] relative bg-no-repeat bg-cover">
-        <div className="bg-primary relative w-full min-h-full bg-opacity-70 flex flex-col lg:flex-row lg:py-0 px-2 sm:px-8 md:px-14  items-center justify-center pt-4 sm:justify-end gap-6 sm:gap-0">
+      <div className="w-full min-h-screen sm:h-[115vh] lg:h-[100vh] xl:h-[100vh] overflow-hidden bg-fixed bg-[url('/src/assets/4.png')] relative bg-no-repeat bg-cover">
+        <div className="bg-primary relative py-8 w-full min-h-full bg-opacity-70 flex flex-col lg:flex-row lg:py-0 px-2 sm:px-8 md:px-14  items-center justify-center pt-4 sm:justify-end gap-6 sm:gap-0">
           <div className="flex flex-col gap-4 items-center sm:items-start px-5 sm:px-0 justify-center w-[100%] lg:w-[50%] min-h-full">
             <h2 className='text-center sm:text-left text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-tritary font-bold'><span className='text-background'>Dr.</span> Faz Mehmood</h2>
             <div className="flex flex-col gap-3 items-start justify-center">
@@ -384,8 +386,38 @@ containerRef.current.classList.remove("show-controls")
           </div>
         </div>
       </div>
+      {/* awards */}
+      <div className="w-full min-h-[20vh] py-20 bg-white px-2 flex flex-col items-center justify-center gap-10 bg-opacity-70">
+      <h2 className='text-center text-3xl sm:text-4xl md:text-5xl text-tritary font-bold [text-shadow:_2px_2px_8px_#000000]'>Awards</h2>
+        <div className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 items-center w-[80%] text-center md:w-[60%] md:gap-10 lg:gap-0 lg:w-[50%] mx-auto min-h-[400px]">
+             <div className="h-[140px] md:h-[150px] w-full  flex items-center justify-center">
+              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/award1.avif" alt="" />
+             </div>
+             <div className="h-[140px] md:h-[150px] w-full  flex items-center justify-center">
+              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/comp2.png" alt="" />
+             </div>
+             <div className="h-[140px] md:h-[150px] w-full  flex items-center justify-center">
+              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/comp3.png" alt="" />
+             </div>
+             <div className="h-[140px] md:h-[150px] w-full  flex items-center justify-center">
+              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/comp4.png" alt="" />
+             </div>
+             <div className="h-[140px] md:h-[150px] w-full  flex items-center justify-center">
+              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/comp1.png" alt="" />
+             </div>
+             <div className="h-[140px] md:h-[150px] w-full  flex items-center justify-center">
+              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/comp2.png" alt="" />
+             </div>
+             <div className="h-[140px] md:h-[150px] w-full  flex items-center justify-center">
+              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/comp3.png" alt="" />
+             </div>
+             <div className="h-[140px] md:h-[150px] w-full flex items-center justify-center">
+              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/comp4.png" alt="" />
+             </div>
+        </div>
+      </div>
       {/* Resource */}
-      <div className="flex flex-col gap-8 py-8 px-2 items-center justify-center w-full min-h-screen mb-4 md:mb-0">
+      <div className="flex flex-col gap-8 py-8 md:py-0 px-2 items-center justify-center w-full min-h-[70vh] mb-4 md:mb-0">
         <div className="flex flex-col w-full items-center justify-center gap-2">
           <h2 className='text-center text-3xl sm:text-4xl md:text-5xl text-tritary font-bold [text-shadow:_2px_2px_8px_#000000]'>Find Your Next Breakthrough</h2>
           <h4 className='text-base sm:text-lg text-gray-600 text-center'>Explore some of Dr.Faz best thoughts and content.</h4>
@@ -398,6 +430,26 @@ containerRef.current.classList.remove("show-controls")
         <button className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold transition-all ease-in-out duration-500'>More Videos</button>
         <button></button>
       </div>
+
+ {/* Companies */}
+ <div className="w-full min-h-[20vh] py-20 px-2 flex flex-col items-center justify-center gap-10 bg-white bg-opacity-70">
+      <h2 className='text-center text-3xl sm:text-4xl md:text-5xl text-tritary font-bold [text-shadow:_2px_2px_8px_#000000]'>Companies</h2>
+        <div className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 items-center  w-[80%] mx-auto min-h-[200px]">
+             <div className="h-[140px] md:h-[200px] w-full  flex items-center justify-center">
+              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/comp1.png" alt="" />
+             </div>
+             <div className="h-[140px] md:h-[200px] w-full  flex items-center justify-center">
+              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/comp2.png" alt="" />
+             </div>
+             <div className="h-[140px] md:h-[200px] w-full  flex items-center justify-center">
+              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/comp3.png" alt="" />
+             </div>
+             <div className="h-[140px] md:h-[200px] w-full flex items-center justify-center">
+              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/comp4.png" alt="" />
+             </div>
+        </div>
+      </div>
+
       {/* Testimonial */}
       <div className="w-full h-screen bg-fixed bg-[url('/src/assets/aboutpage6.png')] bg-cover relative">
         <div className="z-10 absolute w-full h-full bg-background bg-opacity-30"></div>
@@ -438,6 +490,9 @@ containerRef.current.classList.remove("show-controls")
         </div>
         <button className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500 mt-8'>View More</button>
       </div>
+
+    
+
     </div>
   )
 }
