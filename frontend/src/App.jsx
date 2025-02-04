@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import NavBar from './components/NavBar.jsx';
-import {Routes,Route} from 'react-router-dom';
+import {Routes,Route, useLocation} from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
@@ -18,7 +18,12 @@ import LeaderShipDev from './pages/LeaderShipDev.jsx';
 import DreamBuilding from './pages/DreamBuilding.jsx';
 
 const App = () => {
-  
+  const location = useLocation(); // Hook from React Router to get the current location
+
+  useEffect(() => {
+    // Scroll to the top of the page whenever the route changes
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
     <div className='w-full min-h-screen bg-background text-darkBlue overflow-x-hidden'>
      <NavBar/>

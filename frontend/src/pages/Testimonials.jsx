@@ -26,7 +26,7 @@ const Testimonials = () => {
         <div className="flex flex-col items-center justify-center md:items-start gap-2 w-full md:w-[50%]">
           <h4 className='flex justify-center items-center gap-4 text-primary text-lg font-light text-center md:text-start'>TESTIMONIALS <span className='w-10 h-[1px] bg-primary'></span></h4>
           <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary text-center md:text-start'>Uncover the reasons behind <span className='text-tritary'>Faz's worldwide popularity as a trusted partner.</span></h1>
-          <button className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500 mt-4 md:text-start'>View</button>
+          {/* <button className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500 mt-4 md:text-start'>View</button> */}
         </div>
         {/* Right */}
         <div className="w-full md:w-[50%] flex justify-center items-center">
@@ -107,7 +107,7 @@ const Testimonials = () => {
 
 {/* Section 3 */}
       <div className="w-screen min-h-screen grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 py-20 gap-4 bg-white">
-    
+
         <VideoTestimonial thumb={'/src/assets/thumb1.png'} videoRef={videoRef1} videoSrc={"/src/assets/videos/10.mp4"} />
         <VideoTestimonial thumb={'/src/assets/thumb2.png'} videoRef={videoRef2} videoSrc={"/src/assets/videos/1.mp4"} />
         <VideoTestimonial thumb={'/src/assets/thumb3.png'} videoRef={videoRef3} videoSrc={"/src/assets/videos/2.mp4"} />

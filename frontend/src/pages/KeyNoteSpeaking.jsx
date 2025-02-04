@@ -1,6 +1,24 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import Video from '../components/Video';
 
 const KeyNoteSpeaking = () => {
+  const videoRef1 = useRef(null);
+  const videoRef2 = useRef(null);
+
+  const [isCalendlyOpen, setCalendlyOpen] = useState(false);
+
+  const openCalendly = () => {
+    // Open the Calendly widget
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/fazmemon56/drfazal-com?background_color=16425b&text_color=f1efef',
+      });
+
+      // Set state to track that the widget is open
+      setCalendlyOpen(true);
+    }
+  };
+  
   return (
     <div className="w-full min-h-screen bg-background relative mt-[108px]">
 
@@ -13,7 +31,7 @@ const KeyNoteSpeaking = () => {
             Book Dr. <span className='text-tritary '>Faz To Inspire and Transform</span>
           </h1>
           <p className='text-base md:text-lg text-white text-center'>Looking for an inspiring speaker to energize your audience and deliver impactful insights? Dr. Faz Mehmood brings a wealth of experience as a global strategist, leadership coach, and visionary mentor. With over 40 years of expertise across Fortune 100 companies, entrepreneurship, and transformational coaching, Dr. Faz connects with audiences through engaging storytelling and actionable strategies that spark change and inspire growth. Whether it’s a corporate event, leadership summit, or motivational session, Dr. Faz delivers a powerful message tailored to empower and uplift.</p>
-          <button className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500'>Book Faz To Speak</button>
+          <button className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500' onClick={openCalendly}>Book Faz To Speak</button>
         </div>
       </div>
 
@@ -63,7 +81,7 @@ const KeyNoteSpeaking = () => {
               <li className='text-background list-disc'>Coaches and Consultants</li>
             </ul>
             <p className='text-base md:text-lg text-background text-center md:text-start' >In this engaging and transformative session, participants will gain actionable strategies to build meaningful connections, navigate multicultural environments, and leverage networking opportunities like never before. Dr. Faz Mehmood, an expert with 40 years of experience in global leadership, will empower you to unlock the true potential of networking for unparalleled personal and professional growth.</p>
-            <button className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500'>Book Faz To Speak</button>
+            <button onClick={openCalendly} className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500'>Book Faz To Speak</button>
           </div>
         </div>
       </div>
@@ -99,7 +117,7 @@ const KeyNoteSpeaking = () => {
               <li className='text-primary list-disc'>Engaging activities that encourage interaction and practical application.</li>
             </ul>
             <p className='text-base md:text-lg text-primary text-center md:text-start' >This program is ideal for professionals in Human Resources, Marketing, Communications, and Meetings Technology, seeking to elevate their communication game while maintaining integrity at the core of their actions.</p>
-            <button className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500'>Book Faz To Speak</button>
+            <button onClick={openCalendly} className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500'>Book Faz To Speak</button>
           </div>
           <div className="w-full relative md:w-[50%] h-[400px] md:h-[1200px] flex items-start justify-center">
             <img src="/src/assets/kr1.png" className='w-full md:w-[80%] h-[80%] md:h-[50%] rounded-lg object-cover object-right' alt="" />
@@ -131,7 +149,7 @@ const KeyNoteSpeaking = () => {
               <li className='text-background list-disc'>Youngsters</li>
             </ul>
             <p className='text-base md:text-lg text-background text-center md:text-start' >With practical, down-to-earth principles, this session inspires participants to embrace habits that foster trust, integrity, and positive influence, leaving them empowered to make meaningful changes in their daily lives.</p>
-            <button className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500'>Book Faz To Speak</button>
+            <button onClick={openCalendly} className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500'>Book Faz To Speak</button>
           </div>
         </div>
       </div>
@@ -165,7 +183,7 @@ const KeyNoteSpeaking = () => {
               <li className='text-primary list-disc'>Confidence to implement actionable market matchmaking techniques.</li>
             </ul>
             <p className='text-base md:text-lg text-primary text-center md:text-start' >Don't miss your chance to become a master at connecting with the right markets and take your business to unprecedented heights. Join Dr. Faz Mehmood and transform the way you approach market matchmaking today!</p>
-            <button className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500'>Book Faz To Speak</button>
+            <button onClick={openCalendly} className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500'>Book Faz To Speak</button>
           </div>
           <div className="w-full relative md:w-[50%] h-[400px] md:h-[1200px] flex items-start justify-center">
             <img src="/src/assets/kr2.png" className='w-full md:w-[80%] h-[80%] md:h-[50%] rounded-lg object-cover object-right' alt="" />
@@ -174,28 +192,28 @@ const KeyNoteSpeaking = () => {
       </div>
 
       {/* Section 7 */}
-      <div className="w-full px-4 md:px-12 py-16 min-h-screen flex flex-col md:flex-row gap-6 justify-between md:justify-center items-center bg-background">
+      <div className="w-full px-4 md:px-12 py-16 min-h-[50vh] md:pl-24 flex flex-col md:flex-row gap-6 justify-between md:justify-center items-center bg-background">
         <div className="w-full md:w-[48%] min-h-full flex flex-col gap-3 items-center md:items-start justify-center">
           <h4 className='text-xl md:text-2xl text-center md:text-start text-primary font-semibold'>
-            Testimonial - John C Maxwell
+          The Art of Impactful Keynote Speaking
           </h4>
-          <p className='text-base md:text-lg text-secondary text-center md:text-start' >In "GADGET's Guide to Marketing," Michael Pope leverages his extensive IT expertise to demystify technology for marketing in the coaching business. This presentation simplifies complex technological concepts and provides practical, actionable steps that yield tangible results. Michael's approach makes technology easy, understandable, and most importantly, relevant for effective marketing strategies.</p>
+          <p className='text-base md:text-lg text-secondary text-center md:text-start' >Experience the transformative power of Dr. Faz’s keynote speeches that have inspired audiences across four continents. This video showcases dynamic presentations, heartfelt stories, and strategies that ignite motivation, foster leadership, and drive personal and professional growth.</p>
         </div>
         <div className="w-full md:w-[48%] min-h-full flex justify-center items-center">
-          <video controls className='w-[80%] h-[300px] rounded-lg shadow-4xl shadow-thrice' src="/src/assets/videos/Fazal.mp4"></video>
+        <Video thumb={'/src/assets/co3.jpeg'} videoRef={videoRef1} videoSrc={"/src/assets/videos/fazal2.mp4"} />
         </div>
       </div>
 
       {/* Section 8 */}
-      <div className="w-full px-4 md:px-12 min-h-screen md:min-h-[60vh] flex flex-col md:flex-row gap-6 justify-center md:justify-center items-center bg-background">
+      <div className="w-full px-4 md:px-12 min-h-screen md:min-h-[50vh] flex flex-col md:flex-row gap-6 justify-center md:justify-center items-center bg-background">
         <div className="w-full md:w-[48%] min-h-full flex justify-center items-center">
-          <video controls className='w-[80%] h-[300px] rounded-lg shadow-4xl shadow-thrice' src="/src/assets/videos/fazal2.mp4"></video>
+        <Video videoRef={videoRef2} videoSrc={"/src/assets/videos/Fazal.mp4"} />
         </div>
         <div className="w-full md:w-[48%] min-h-full flex flex-col gap-3 items-center md:items-start justify-center">
           <h4 className='text-xl md:text-2xl text-center md:text-start text-primary font-semibold'>
-            Testimonial - John C Maxwell
+          Elevate, Empower, Excel
           </h4>
-          <p className='text-base md:text-lg text-secondary text-center md:text-start' >In "GADGET's Guide to Marketing," Michael Pope leverages his extensive IT expertise to demystify technology for marketing in the coaching business. This presentation simplifies complex technological concepts and provides practical, actionable steps that yield tangible results. Michael's approach makes technology easy, understandable, and most importantly, relevant for effective marketing strategies.</p>
+          <p className='text-base md:text-lg text-secondary text-center md:text-start' >Discover how Dr. Faz crafts speeches that go beyond words to create lasting change. In this video, he reveals his approach to connecting with diverse audiences, delivering actionable insights, and leaving a lasting impact that empowers individuals to lead with purpose and passion.</p>
         </div>
       </div>
 

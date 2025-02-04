@@ -4,6 +4,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { Timeline } from 'gsap/gsap-core.js'
 import Marquee from "react-fast-marquee";
+import { useNavigate } from 'react-router-dom'
 // import "https://assets.calendly.com/assets/external/widget.css";
 // import "https://assets.calendly.com/assets/external/widget.js";
 
@@ -218,6 +219,7 @@ containerRef.current.classList.remove("show-controls")
     playPauseRef.current.classList.contains("ri-play-fill") ? playPauseRef.current.classList.replace("ri-play-fill","ri-pause-fill") : playPauseRef.current.classList.replace("ri-pause-fill","ri-play-fill");
   }
  
+  const navigate = useNavigate();
 
   return (
     <div onClick={(e) => checkClick(e)} className='w-full min-h-screen overflow-x-hidden'>
@@ -239,7 +241,7 @@ containerRef.current.classList.remove("show-controls")
               <div className="absolute top-[50%] left-[50%] md:right-[unset] translate-x-[-50%] md:translate-x-[unset] translate-y-[-50%] md:translate-y-[unset] md:top-[15%] md:left-[10%] w-[80%] md:w-[50%] min-h-[300px] bg-secondary bg-opacity-50 rounded-xl p-8 flex justify-center items-center flex-col gap-5">
                    <h1 className='w-full text-3xl md:text-4xl lg:text-5xl font-extrabold text-tritary text-center'>Unlock market success with our Market Matchmaker Training</h1>
                   <p className='text-center text-sm sm:text-base text-background'>"Unlock market success with our Market Matchmaker Training! Master market research, customer segmentation, and competitive analysis to identify opportunities and craft winning strategies. Learn to tailor your offerings, outshine competitors, and build powerful partnerships. Step into the spotlight with skills that drive results!".</p>
-                   <button className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500'>Read More</button>
+                   <button onClick={() => navigate('/keynotespeaking') } className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500'>Read More</button>
               </div>
             )
           }
@@ -249,7 +251,7 @@ containerRef.current.classList.remove("show-controls")
               <div className="absolute top-[50%] left-[50%] md:left-[unset] translate-x-[-50%] md:translate-x-[unset] translate-y-[-50%] md:translate-y-[unset] md:top-[20%] md:right-[10%] w-[80%] md:w-[45%] min-h-[300px] bg-secondary bg-opacity-50 rounded-xl p-8 flex justify-center items-center flex-col gap-5">
                   <h1 className='w-full text-3xl md:text-4xl lg:text-5xl font-extrabold text-tritary text-center'>Boost your sales while staying true to your values! </h1>
                   <p className='text-center text-sm sm:text-base text-background'>"Boost your sales while staying true to your values! Selling with Integrity empowers you to build trust, foster genuine connections, and achieve success with honesty at the core."</p>
-                   <button className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500'>Read More</button>
+                   <button onClick={() => navigate('/salesTraining') } className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500'>Read More</button>
               </div>
             )
           }
@@ -258,7 +260,7 @@ containerRef.current.classList.remove("show-controls")
               <div className="absolute top-[50%] left-[50%] md:left-[unset] translate-x-[-50%] md:translate-x-[unset] translate-y-[-50%] md:translate-y-[unset] md:top-[15%] md:right-[10%] w-[80%] md:w-[50%] min-h-[300px] bg-secondary bg-opacity-50 rounded-xl p-8 flex justify-center items-center flex-col gap-5">
                   <h1 className='w-full text-3xl md:text-4xl lg:text-5xl font-extrabold text-tritary text-center'>Stop Not Working, Start Networking</h1>
                   <p className='text-center text-sm sm:text-base text-background'>"Stop Not Working, Start Networking" is a game-changing program that will empower individuals and organizations to unlock new opportunities, establish fruitful partnerships, and ultimately achieve greater success.</p>
-                   <button className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500'>Read More</button>
+                   <button onClick={() => navigate('/keynotespeaking') } className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500'>Read More</button>
               </div>
             )
           }
@@ -345,7 +347,7 @@ containerRef.current.classList.remove("show-controls")
               </li>
             </ul>
           </div>
-          <video onLoadedData={(e) => updateDuration(e)} onTimeUpdate={(e) => timeUpdate(e)} ref={videoRef} poster='/src/assets/4.png' className='w-full h-full px-2 rounded-lg' src="/src/assets/drFazVideo.mp4"></video>
+          <video onLoadedData={(e) => updateDuration(e)} onTimeUpdate={(e) => timeUpdate(e)} ref={videoRef}  className='w-full h-full px-2 rounded-lg' src="/src/assets/videos/homeVid.mp4"></video>
         </div>
         <div className="flex flex-col gap-4 justify-center items-center w-full bg-primary py-4 px-2 mt-48 relative">
           <h3 className='text-lg sm:text-xl text-background font-semibold text-center'>HAS WORKED WITH PROFESSIONALS IN</h3>
@@ -379,7 +381,7 @@ containerRef.current.classList.remove("show-controls")
               <p className='text-center sm:text-left text-sm sm:text-base text-background'>An Executive Director with the John Maxwell Company, Dr. Faz uses actionable insights, storytelling, and humor to inspire audiences worldwide. Whether in Karachi or Pennsylvania, his mission is to help you realize your dreams, take decisive action, and live a life of success and abundance.</p>
               <p className='text-center sm:text-left text-sm sm:text-base text-background'>Dr. Faz’s unique blend of strategic insight and deep human connection makes him a sought-after mentor and coach, guiding you toward achieving your highest potential.</p>
             </div>
-            <button className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500'>About Faz</button>
+            <button onClick={() => navigate('/about') } className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500'>About Faz</button>
           </div>
           <div className="w-[100%] lg:w-[50%] relative h-[500px] md:h-[550px] hidden sm:flex justify-center items-center lg:h-[900px] xl:h-[900px]">
             <img src="/src/assets/about2.png" className='w-full h-full object-cover' alt="" />
@@ -390,29 +392,29 @@ containerRef.current.classList.remove("show-controls")
       <div className="w-full min-h-[20vh] py-20 bg-white px-2 flex flex-col items-center justify-center gap-10 bg-opacity-70">
       <h2 className='text-center text-3xl sm:text-4xl md:text-5xl text-tritary font-bold [text-shadow:_2px_2px_8px_#000000]'>Awards</h2>
         <div className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 items-center w-[80%] text-center md:w-[60%] md:gap-10 lg:gap-0 lg:w-[50%] mx-auto min-h-[400px]">
-             <div className="h-[140px] md:h-[150px] w-full  flex items-center justify-center">
+             <div className="h-[140px] md:h-[150px] w-full  flex items-start justify-center">
               <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/award1.avif" alt="" />
              </div>
-             <div className="h-[140px] md:h-[150px] w-full  flex items-center justify-center">
-              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/comp2.png" alt="" />
+             <div className="h-[140px] md:h-[150px] w-full  flex items-start justify-center">
+              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/aw1.png" alt="" />
              </div>
-             <div className="h-[140px] md:h-[150px] w-full  flex items-center justify-center">
-              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/comp3.png" alt="" />
+             <div className="h-[180px] md:h-[200px] w-full  flex items-start justify-center">
+              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/aw2.png" alt="" />
              </div>
-             <div className="h-[140px] md:h-[150px] w-full  flex items-center justify-center">
-              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/comp4.png" alt="" />
+             <div className="h-[180px] md:h-[240px] w-full  flex items-start justify-center">
+              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/aw3.png" alt="" />
              </div>
-             <div className="h-[140px] md:h-[150px] w-full  flex items-center justify-center">
-              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/comp1.png" alt="" />
+             <div className="h-[200px] md:h-[300px] w-full  flex items-start justify-center">
+              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/aw4.png" alt="" />
              </div>
-             <div className="h-[140px] md:h-[150px] w-full  flex items-center justify-center">
-              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/comp2.png" alt="" />
+             <div className="h-[180px] md:h-[240px] w-full  flex items-start justify-center">
+              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/aw5.png" alt="" />
              </div>
-             <div className="h-[140px] md:h-[150px] w-full  flex items-center justify-center">
-              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/comp3.png" alt="" />
+             <div className="h-[220px] md:h-[240px] w-full  flex items-start justify-center">
+              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/aw6.png" alt="" />
              </div>
-             <div className="h-[140px] md:h-[150px] w-full flex items-center justify-center">
-              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/comp4.png" alt="" />
+             <div className="h-[240px] md:h-[280px] w-full flex items-start justify-center">
+              <img className='h-full object-cover hover:scale-110 transition-all ease-in duration-200' src="/src/assets/aw7.png" alt="" />
              </div>
         </div>
       </div>
@@ -427,7 +429,7 @@ containerRef.current.classList.remove("show-controls")
           <iframe className='rounded-xl w-full h-[150px] md:w-[23%] md:h-[200px]' src="https://www.youtube.com/embed/5YDcklQCXZU?si=FUJEsPPqOEbwVQOP" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           <iframe className='rounded-xl w-full h-[150px] md:w-[23%] md:h-[200px]' src="https://www.youtube.com/embed/5YDcklQCXZU?si=FUJEsPPqOEbwVQOP" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </div>
-        <button className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold transition-all ease-in-out duration-500'>More Videos</button>
+        <button className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold transition-all ease-in-out duration-500'><a href="https://youtube.com/" target='_blank'>More Videos</a></button>
         <button></button>
       </div>
 
@@ -488,7 +490,7 @@ containerRef.current.classList.remove("show-controls")
             </div>
           </div>
         </div>
-        <button className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500 mt-8'>View More</button>
+        <button className='bg-thrice text-background sm:text-xl hover:bg-tritary hover:text-primary text-base px-2 py-1 sm:px-5 text-center rounded-xl font-extrabold border-2 border-background transition-all ease-in-out duration-500 mt-8' onClick={() => navigate('/testimonials') }>View More</button>
       </div>
 
     
